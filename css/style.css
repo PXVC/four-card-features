@@ -1,0 +1,221 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  text-align: center;
+  background: #fafafa;
+}
+
+h1,
+h5,
+p {
+  color: #4c4e61;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.heading {
+  width: 41%;
+  position: relative;
+  left: 30%;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+}
+
+.heading h5 {
+  font-weight: 200;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.heading .heading1 {
+  font-weight: 200;
+}
+
+.heading .heading2 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  background-color: white;
+  display: inline-block;
+  -webkit-box-shadow: 0px 5px 18px -6px rgba(84, 158, 242, 0.75);
+          box-shadow: 0px 5px 18px -6px rgba(84, 158, 242, 0.75);
+  width: 400px;
+  height: 270px;
+  padding: 30px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2,
+.card4 h2 {
+  font-size: larger;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p {
+  width: auto;
+  line-height: 27px;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img {
+  -webkit-transform: translate(421%, 80%);
+          transform: translate(421%, 80%);
+}
+
+.two-card {
+  margin-top: 40px;
+}
+
+.card1 {
+  border-top: 5px solid #45d3d3;
+}
+
+.card2 {
+  border-top: 5px solid #ea5353;
+}
+
+.card3 {
+  border-top: 5px solid #fcaf4a;
+  margin-top: 30px;
+}
+
+.card4 {
+  border-top: 5px solid #549ef2;
+}
+
+.card1,
+.card4 {
+  margin-top: 180px;
+  margin-left: 35px;
+}
+
+.attribution {
+  text-align: center;
+  display: inline-block;
+}
+
+.attribution::before {
+  content: '\00A9';
+}
+
+a,
+a:active {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+a.after::after,
+a:active.after::after {
+  content: '';
+  position: absolute;
+  bottom: -.25em;
+  height: .08em;
+  width: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+a.first::after,
+a:active.first::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+a.after:hover::after,
+a:active.after:hover::after {
+  width: 100%;
+}
+
+.name {
+  color: #549ef2;
+}
+
+.name:hover {
+  color: #fcaf4a;
+}
+
+.name::after {
+  background: #fcaf4a;
+}
+
+.web {
+  color: #45d3d3;
+}
+
+.web:hover {
+  color: #ea5353;
+}
+
+.web::after {
+  background: #ea5353;
+}
+
+/* mobile */
+@media screen and (max-width: 375px) {
+  .heading {
+    width: 82%;
+    position: relative;
+    left: 30px;
+  }
+  .heading1,
+  .heading2 {
+    font-size: 27px !important;
+    width: 200%;
+    position: relative;
+    left: -47%;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 90%;
+  }
+  .card1 {
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+  .card4 {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  img {
+    -webkit-transform: translate(338%, 100%) !important;
+            transform: translate(338%, 100%) !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
